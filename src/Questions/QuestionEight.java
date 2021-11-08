@@ -11,12 +11,20 @@ public class QuestionEight {
 	      {
 	        
 	    	ArrayList< String > words = new ArrayList< String >();
-	        Scanner scan = new Scanner(System.in); 
-	        
-	        while(scan.hasNext())     
-	           words.add(scan.next());
-	        System.out.println("Is it a palindrome? " + isPalindrome(words));
-	      }
+	    	words.add("karan");
+	    	words.add("madam");
+	    	words.add("tom");
+	    	words.add("civic");
+	    	words.add("radar");
+	    	words.add("jimmy");
+	    	words.add("john");
+	    	words.add("kayak");
+	    	words.add("refer");
+	    	words.add("billy");
+	    	words.add("did");
+	    	
+	    	ArrayList<String> palindromes = new ArrayList<String>();
+	    	
 	      static boolean isPalindrome(ArrayList< String > w)
 	      {
 	       int front  = 0, back = w.size() - 1;

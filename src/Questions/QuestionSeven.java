@@ -46,12 +46,12 @@ class EmpAgeComparator implements Comparator<Emp>{
         return e1.getAge() - e2.getAge();
     }    
 }
-class EmpDeptComparator implements Comparator<Emp>{
-    
-    public String compare(Emp e1, Emp e2) {
-        return e1.getDepartment() - e2.getDepartment();
-    }    
-} 
+/*
+ * class EmpDeptComparator implements Comparator<Emp>{
+ * 
+ * public String compare(Emp e1, Emp e2) { return e1.getDepartment() -
+ * e2.getDepartment(); } }
+ */
 
 public class QuestionSeven {
 	

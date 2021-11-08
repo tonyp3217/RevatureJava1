@@ -16,8 +16,6 @@ public class QuestionOne
 		}
 		
 		
-
-		
 		// for a bubble sort two loops are used
 		for(int i=0;i<n;i++) // first for loop to iterate array
 		{

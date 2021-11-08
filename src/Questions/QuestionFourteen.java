@@ -8,6 +8,40 @@ package Questions;
  * “I am learning Core Java”
  * 
  */
+
+import java.time.LocalDateTime;
+import java.util.*;
+
+
+
 public class QuestionFourteen {
 
+	public void SwitchCase() {
+		int pickme = 0;
+		
+		
+		
+	switch (pickme) {
+	case 1:
+		
+		break;
+	case 2:
+		System.out.println(LocalDateTime.now());
+		break;
+	case 3: String myStr = "I am learning Core Java";
+		String[] spString = myStr.split("");
+		printArray(spString);
+	}
+	}
+    static void printArray(String myArray[])
+    {
+        //get array length
+        int n = myArray.length;
+        //iterate through array and print it out
+        for (int i=0; i<n; ++i) {
+            System.out.print(myArray[i] + " ");
+        }
+        System.out.println();
+    }
+	
 }

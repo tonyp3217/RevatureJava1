@@ -3,16 +3,19 @@ package Questions;
  * Reverse a string without using a temporary variable. Do NOT use reverse() in the StringBuffer or 
  * the StringBuilder APIs.
  */
-import java.util.Scanner;
+
+
 
 public class QuestionThree 
 {
 	public void reverseString() {	
-		  Scanner input = new Scanner(System.in);
-		  String myStr = "";
+		  
+		  String myStr = "The secret mysteries of Java";
+
 		  int length = 0;
 		  int index; 
-		  char[] input = ;
+		  
+		  char[] charArray = myStr.toCharArray();
 
 		  // Iterate in place, from both sides at one time
 		  int fromFront = 0;
@@ -30,7 +33,7 @@ public class QuestionThree
 
 
 	    //convert back to string
-	    String newString = new String(stringChars2);
+	    String newString = new String(charArray);
 
 	    //output result
 	    System.out.println(newString);
