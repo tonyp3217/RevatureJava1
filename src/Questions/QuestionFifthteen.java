@@ -6,6 +6,16 @@ package Questions;
  * class having a main method that calls the implementing class.
  */
 
-public class QuestionFifthteen {
 
+public class QuestionFifthteen {
+    public void Interfaces() {
+
+        Q15_interface q15 = new Q15_implem();
+
+        Result(q15);
+    }
+
+    public void Result(Q15_interface q15) {
+        System.out.println(q15.addition(5, 10));
+    }
 }

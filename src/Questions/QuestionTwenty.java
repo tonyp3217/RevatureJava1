@@ -12,19 +12,34 @@ State: Arizona State
 
  */
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 
 public class QuestionTwenty {
+    public void fileRead() throws IOException{
 
-    FileReader fr = new FileReader("Data.txt");
+        BufferedReader reader = null;
 
-    BufferedReader buffRead = new BufferedReader(fr);
+        try{
+            reader = new BufferedReader(new FileReader("Data.txt"));
+        String line;
+        while((line = reader.readLine()) != null) {
 
-    while (buffRead.ready()){
+            String[] data = line.split(":");
 
-    System.out.println("Name: " +(char)buffRead.read());
+            System.out.println("Name: " + data[0] + " " + data[1]);
+            System.out.println("Age: " + data[2] + " years");
+            System.out.println("State: " + data[3] + " State");
+            System.out.println("\n");
+        }
+        }catch(IOException e){
+            e.printStackTrace();
+        }finally{
+            if(reader != null){
+                reader.close();
+            }
+        }
     }
-
-
 }
