@@ -1,16 +1,16 @@
 package Questions;
-
+// Perform a bubble sort on the following integer array: 1,0,5,6,3,2,3,7,9,8,4
 public class QuestionOne 
 {
 	public void BubbleSort(){
 		// Declare the array of integers
-		int arr[] = {1,0,5,6,3,2,7,8,4,25,2};
+		int[] arr = {1,0,5,6,3,2,7,8,4,25,2};
 		int n = arr.length;
 		
 		
 		
 		//print original array
-		System.out.println("Original Array: "); 
+		System.out.println("Original Array: ");
 		for(int x=0;x<n;x++) {
 			System.out.print(arr[x]);
 		}
