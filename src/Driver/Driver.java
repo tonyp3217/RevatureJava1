@@ -14,8 +14,8 @@ public class Driver {
 	public static void main(String a[])
 	{
 
-		//QuestionOne	q1 = new QuestionOne();
-		//q1.BubbleSort();
+		QuestionOne q1 = new QuestionOne();
+		q1.BubbleSort();
 		
 
 		QuestionTwo.Fib(25);
