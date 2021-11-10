@@ -4,20 +4,18 @@ package Questions;
  */
 import java.util.Scanner; 
 
-//public class QuestionFour {
-//	 public void factor() {
-//		int i = 1;
-//		int fact = 1;
-//
-//		Scanner n = new Scanner(System.in);
-//
-//		System.out.println("Enter any number:");
-//		int result = Integer.parseUnsignedInt(n);
-//		for(i=1;i<=result;i++){
-//	      	fact=fact*i;
-//	  }
-//	  System.out.println("Factorial of "+n+" is: "+fact);
-//	 }
-//
-//}
+public class QuestionFour {
+	static int factorial(int n){
+		if (n == 0)
+			return 1;
+		else
+			return(n * factorial(n-1));
+	}
+	public void factor(){
+		int i,fact=1;
+		int number=4;//It is the number to calculate factorial
+		fact = factorial(number);
+		System.out.println("\nFactorial of "+number+" is: "+fact);
+	}
+}
 

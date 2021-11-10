@@ -6,20 +6,17 @@ package Questions;
  */
 
 public class QuestionFive {
-	
+	//instantiate string called Substring with argument
 	String Substring(String str, int idx) {
-		
-		char[] charArray = str.toCharArray();
-		char[] substringArray = new char[idx];
-		
+		String temp="";
+
 		for (int i = 0; i < idx; ++i) {
-			substringArray[i] = charArray[i];
+			temp = temp+str.charAt(i);
 		}
-		
-		return new String(substringArray);
+		return temp;
 	}
-	
-	static String testString = "";
-	
+	public void pSub(String[] arg){
+		System.out.println(Substring("Java is challenging", 8));
+	}
 
 }

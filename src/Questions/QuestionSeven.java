@@ -1,5 +1,4 @@
 package Questions;
-
 /*
  * Sort two employees based on their name, department, and age using the Comparator 
  * interface
@@ -40,48 +39,48 @@ class Emp {
     	}
 }
 
-class EmpAgeComparator implements Comparator<Emp>{
+class EmpAgeComparator implements Comparator<Emp> {
     
     public int compare(Emp e1, Emp e2) {
         return e1.getAge() - e2.getAge();
     }    
 }
-/*
- * class EmpDeptComparator implements Comparator<Emp>{
- * 
- * public String compare(Emp e1, Emp e2) { return e1.getDepartment() -
- * e2.getDepartment(); } }
- */
+
+//public class EmpDeptComparator implements Comparator<Emp>{
+//
+//  public int compare(Emp e1, Emp e2) { return e1.getDepartment() - e2.getDepartment(); } }
+
 
 public class QuestionSeven {
 	
-//	    public void EmpComparative() {
-//
-//	        //create some Employee(Emp) objects
-//	        ArrayList<Emp> listEmp = new ArrayList<Emp>();
-//	        listEmp.add( new Emp("John", "Communications", 40) );
-//	        listEmp.add( new Emp("Mark", "Communications", 42) );
-//	        listEmp.add( new Emp("Oliver", "HR", 28) );
-//	        listEmp.add( new Emp("Silvia", "HR", 32) );
-//	        listEmp.add( new Emp("Shannon", "Accounting", 28) );
-//
-//	        //list without sorting
-//	        System.out.println("Emp list without sorting");
-//	        System.out.println( listEmp );
-//
-//	        //sort the list using age comparator
-//	        Collections.sort( listEmp, new EmpAgeComparator() );
-//
-//	        System.out.println("Emp list after sorting by age");
-//	        System.out.println(listEmp);
-//
-//	        //sort the list using department comparator
-//	        Collections.sort( listEmp, new EmpDeptComparator() );
-//
-//	        System.out.println("Emp list after sorting by department");
-//	        System.out.println(listEmp);
-//
-//	    }
+	    public void EmpComparative() {
+
+	        //create some Employee(Emp) objects
+	        ArrayList<Emp> listEmp = new ArrayList<Emp>();
+	        listEmp.add( new Emp("John", "Communications", 40) );
+	        listEmp.add( new Emp("Mark", "Communications", 42) );
+	        listEmp.add( new Emp("Oliver", "HR", 28) );
+	        listEmp.add( new Emp("Silvia", "HR", 32) );
+	        listEmp.add( new Emp("Shannon", "Accounting", 28) );
+
+	        //list without sorting
+	        System.out.println("Emp list without sorting");
+	        System.out.println(listEmp);
+
+	        //sort the list using age comparator
+	        Collections.sort( listEmp, new EmpAgeComparator() );
+
+	        System.out.println("Emp list after sorting by age");
+	        //(listEmp);
+
+
+	        //sort the list using department comparator
+	        //Collections.sort( listEmp, new EmpDeptComparator() );
+
+	        System.out.println("Emp list after sorting by department");
+	        System.out.println(listEmp);
+
+	    }
 }
 
 
