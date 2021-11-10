@@ -3,7 +3,7 @@ package Driver;
 
 import Questions.*;
 
-import java.io.IOException;
+
 
 
 public class Driver {
@@ -13,7 +13,11 @@ public class Driver {
 		QuestionOne q1 = new QuestionOne();
 		q1.BubbleSort();
 
+
 		QuestionTwo.Fib(25);
+
+		QuestionThree q3 = new QuestionThree();
+		q3.reverseString();
 
 		QuestionFour q4 = new QuestionFour();
 		q4.factor();
@@ -44,8 +48,20 @@ public class Driver {
 		QuestionTwelve q12 = new QuestionTwelve();
 		q12.EvenArray();
 
+		QuestionThirteen q13 = new QuestionThirteen();
+		System.out.println("Question 13 \n");
+		q13.triangle();
+
 		QuestionFourteen q14 = new QuestionFourteen();
 		q14.SwitchCase();
+
+		QuestionFifthteen q15 = new QuestionFifthteen();
+
+		QuestionSixteen q16 = new QuestionSixteen(new String[]{"The world of Java"});
+
+		QuestionSeven q17 = new QuestionSeven();
+
+		QuestionEighteen q18 = new QuestionEighteen();
 
 		Question19 q19 = new Question19();
 		q19.ArrayTest();

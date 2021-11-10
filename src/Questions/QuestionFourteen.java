@@ -41,5 +41,4 @@ public class QuestionFourteen {
         }
         System.out.println();
     }
-	
 }

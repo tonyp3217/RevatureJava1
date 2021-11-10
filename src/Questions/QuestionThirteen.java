@@ -9,7 +9,7 @@ package Questions;
  */
 
 public class QuestionThirteen {
-    public void triangle(String[] args) {
+    public void triangle() {
         int var = 0;
         //first print out the first element 0
         System.out.println(var);

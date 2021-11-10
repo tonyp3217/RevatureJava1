@@ -5,40 +5,27 @@ package Questions;
  */
 
 
+import java.util.Scanner;
 
-public class QuestionThree 
+public class QuestionThree
 {
 	public void reverseString() {	
-		  
-		  String myStr = "The secret mysteries of Java";
 
-//		  int length = 0;
-//		  int index;
-//
-//		  char[] charArray = myStr.toCharArray();
-//
-//		  // Iterate in place, from both sides at one time
-//		  int fromFront = 0;
-//		  int fromEnd = input.length - 1;
-//
-//		  while (fromFront < fromEnd) {
-//	    	  // Swap elements
-//	    		char temp = input[fromEnd];
-//	    		input[fromEnd] = input[fromFront];
-//	    		input[fromFront] = temp;
-//
-//	    	fromFront++;
-//	    	fromEnd--;
+		//take input line
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Type a line String: ");
+		int len;
+		String str = scanner.nextLine();
+		len = str.length();
+
+		for(int i = 0;i<len;i++){
+			//appending each character in reverse order to its end
+			str += str.charAt(len - i - 1);
+		}
+
+		//Getting string that we have appended
+		str = str.substring(len);
+		System.out.println("Reversed string: " + str);
 	}
-
-
-	    //convert back to string
-//	    String newString = new String(charArray);
-
-	    //output result
-	    //System.out.println(newString);
-
-
-	 }
-//}
+}
 

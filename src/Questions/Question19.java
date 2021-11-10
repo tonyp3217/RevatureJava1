@@ -11,9 +11,9 @@ the prime numbers from the ArrayList and print out the remaining ArrayList.
  */
 public class Question19 {
     // Defines what a prime number is
-    private static boolean isPrime(int n){
-        for(int i = 2;i<n;i++){
-            if(n%i == 0) {
+    private boolean isPrime(int myList){
+        for(int i = 2;i<myList;i++){
+            if(myList%i == 0) {
                 return false;
             }
         }
@@ -50,8 +50,9 @@ public class Question19 {
                 oddSum += myList.get(i);
             }
         }
-        //Removes Prime Numbers from list
         System.out.println("Sum of odd numbers is: " + oddSum);
+
+        //Removes Prime Numbers from list
         for (int i = 0; i < myList.size(); i++) {
             if (isPrime(myList.get(i))) {
                 myList.remove(i);
