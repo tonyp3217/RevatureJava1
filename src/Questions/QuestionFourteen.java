@@ -9,10 +9,8 @@ package Questions;
  * 
  */
 
+
 import java.time.LocalDateTime;
-import java.util.*;
-
-
 
 public class QuestionFourteen {
 
@@ -23,7 +21,7 @@ public class QuestionFourteen {
 		
 	switch (pickme) {
 	case 1:
-		
+		System.out.println();
 		break;
 	case 2:
 		System.out.println(LocalDateTime.now());
