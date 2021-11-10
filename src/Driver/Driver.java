@@ -71,9 +71,9 @@ public class Driver {
 		System.out.println("Question 16 \n");
 		q16.QuestionSixteen(new String[]{"The challenging world of Java"});
 
-		QuestionSeven q17 = new QuestionSeven();
+		QuestionSeventeen q17 = new QuestionSeventeen();
 		System.out.println("Question 17 \n");
-		q17.EmpComparative(); //broken
+		q17.SimpleInterest();
 
 		QuestionEighteen q18 = new QuestionEighteen();
 		System.out.println("Question 18 \n");
