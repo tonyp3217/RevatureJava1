@@ -48,7 +48,7 @@ class EmpAgeComparator implements Comparator<Emp> {
 
 //public class EmpDeptComparator implements Comparator<Emp>{
 //
-//  public int compare(Emp e1, Emp e2) { return e1.getDepartment() - e2.getDepartment(); } }
+//public string compare(Emp e1, Emp e2) { return e1.getDepartment() - e2.getDepartment(); } }
 
 
 public class QuestionSeven {
@@ -75,7 +75,7 @@ public class QuestionSeven {
 
 
 	        //sort the list using department comparator
-	        //Collections.sort( listEmp, new EmpDeptComparator() );
+//	        Collections.sort( listEmp, new EmpDeptComparator() );
 
 	        System.out.println("Emp list after sorting by department");
 	        System.out.println(listEmp);

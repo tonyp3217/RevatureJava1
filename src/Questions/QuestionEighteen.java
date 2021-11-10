@@ -10,6 +10,46 @@ package Questions;
  * 3. Convert the input string to integer and add 10, output the result to the console.
  * Create an appropriate class having a main method to test the above setup.
  */
+import java.util.Scanner;
 
-public class QuestionEighteen {
+public class QuestionEighteen extends Q18_Superclass {
+
+
+    @Override
+    public boolean hasUppercaseLetter(String s) {
+        char[] characters = s.toCharArray();
+
+        for (char c : characters) {
+            int numerical = (int) c;
+
+            if (numerical >= 65 && numerical <= 90)
+                return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public String toUpperCase(String s) {
+        char[] characters = s.toCharArray();
+
+        for (int i = 0; i < characters.length; ++i) {
+            if ( (int)characters[i] > 90 )
+                characters[i] -= 32;
+        }
+
+        return new String(characters);
+    }
+
+    @Override
+    public int stringToInt(String s) {
+        char[] characters = s.toCharArray();
+        int total = 0;
+
+        for (char c : characters) {
+            total += (int)c;
+        }
+
+        return total + 10;
+    }
 }

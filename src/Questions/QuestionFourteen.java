@@ -10,21 +10,19 @@ package Questions;
  */
 
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 public class QuestionFourteen {
 
-	public void SwitchCase() {
-		int pickme = 0;
-		
-		
-		
+	public void SwitchCase(int pickme) {
+	// switch case
 	switch (pickme) {
 	case 1:
 		System.out.println();
 		break;
 	case 2:
-		System.out.println(LocalDateTime.now());
+		System.out.println(LocalDate.now());
 		break;
 	case 3: String myStr = "I am learning Core Java";
 		String[] spString = myStr.split("");

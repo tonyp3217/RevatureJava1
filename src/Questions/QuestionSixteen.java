@@ -8,7 +8,8 @@ import java.util.Scanner;
  *
  */
 public class QuestionSixteen {
-        public QuestionSixteen(String[] args){
+
+    public void QuestionSixteen(String[] args){
 
             if (args.length > 0) {
                 System.out.println(args[0]);
